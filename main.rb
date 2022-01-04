@@ -34,10 +34,10 @@ while !(finished)
     end
     data = JSON.parse(response.body)
 
-    print "IP:PORT = ".blue 
+    print "IP:PORT = ".green
     puts data["Data"]["connectEndPoints"][0]
 
-    print "Nova consulta? (Y/n) "
+    print "Nova consulta? (Y/n) ".blue
     resposta = gets.chomp
 
     if resposta.downcase == "y"
